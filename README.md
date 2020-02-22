@@ -2,7 +2,6 @@ Markdown Cheatsheet
 ===================
 
 - - - - 
-
 # Heading 1 #
 
     Markup :  # Heading 1 #
@@ -48,9 +47,13 @@ ___Strong emphasized text___
 
     Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
 
-[Named Link](http://www.google.fr/) and http://www.google.fr/ or <http://example.com/>
+[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
 
-    Markup :  [Named Link](http://www.google.fr/) and http://www.google.fr/ or <http://example.com/>
+    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
+
+[heading-1](#heading-1 "Goto heading-1")
+    
+    Markup: [heading-1](#heading-1 "Goto heading-1")
 
 Table, like this one :
 
@@ -100,6 +103,13 @@ Content Cell  | Content Cell
               * Nested bullet
                   * Sub-nested bullet etc
           * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
 ~~~
 
 1. A numbered list
@@ -122,6 +132,14 @@ Content Cell  | Content Cell
           - [x] A completed task
 ~~~
 
+- [ ] An uncompleted task
+    - [ ] A subtask
+
+~~~
+ Markup : - [ ] An uncompleted task
+              - [ ] A subtask
+~~~
+
 > Blockquote
 >> Nested blockquote
 
@@ -135,9 +153,9 @@ _Horizontal line :_
 
 _Image with alt :_
 
-![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
-    Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 Foldable text:
 
@@ -154,6 +172,11 @@ Foldable text:
                <summary>Title 1</summary>
                <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
              </details>
+
+```html
+<h3>HTML</h3>
+<p> Some HTML code here </p>
+```
 
 Hotkey:
 
